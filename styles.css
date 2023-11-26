@@ -88,10 +88,18 @@ body {
 .productBox {
     display: flex;
     flex-direction: column;
-    border-style: dotted;
+    background-color: white;
     padding: 5px;
     margin: 10px;
-    background-color: aliceblue;
+}
+
+.productBox img {
+    border-radius: 10%;
+}
+
+.productBox:hover {
+    border: 3px black dotted;
+    border-radius: 3%;
 }
 
 .productBox__description {
@@ -106,6 +114,11 @@ body {
     margin: 5px;
 }
 
+.productBox__description--text h3 {
+    font-weight: 200;
+    font-style: italic;
+}
+
 .productBox__description--button {
     display: flex;
     justify-content: space-evenly;
@@ -113,7 +126,9 @@ body {
 }
 
 .productBox__description--button button {
-    padding: 5px;
+    padding: 5px;.
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
 }
 
 .productDisplay {
@@ -167,7 +182,7 @@ body {
 }
 
 .productDisplay {
-    background-color: chocolate;
+    background-color: white;
 }
 
 input {
