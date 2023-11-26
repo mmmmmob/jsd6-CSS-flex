@@ -23,10 +23,25 @@ body {
 
 .searchBar {
     display: flex;
-    justify-content: center;
     background-color: aqua;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.searchBar__icon {
+    width: 100px;
+    background-color: bisque;
+}
+
+.searchBar__box {
+    display: flex;
+    flex: 1;
     gap: 5px;
+    justify-content: center;
     padding: 5px;
+    width: 100px;
+    position: relative;
+    border: solid 1px #000;
 }
 
 .navBar {
@@ -39,10 +54,9 @@ body {
 }
 
 .app__header {
-    height: 100px;
-    /* flex settings for nav and search bar */
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    justify-content: space-between;    height: 50px;
 }
 
 .app__content {
@@ -100,6 +114,13 @@ body {
     background-color: chocolate;
 }
 
+input {
+    flex: 1;
+    display: block;
+    border: none;
+    min-width: 0;
+}
+
 /* media-query settings */
 @media screen and (max-width: 1024px) {
     .productAds {
@@ -125,6 +146,11 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .app__header {
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+    }
     .navBar {
         display: flex;
         justify-content: center;
@@ -139,7 +165,7 @@ body {
 
 @media screen and (max-width: 470px) {
     .app__header {
-        height: 300px;
+        height: 185px;
     }
     
     .navBar {
