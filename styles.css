@@ -23,10 +23,25 @@ body {
 
 .searchBar {
     display: flex;
-    justify-content: center;
     background-color: aqua;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.searchBar__icon {
+    width: 100px;
+    background-color: bisque;
+}
+
+.searchBar__box {
+    display: flex;
+    flex: 1;
     gap: 5px;
+    justify-content: center;
     padding: 5px;
+    width: 100px;
+    position: relative;
+    border: solid 1px #000;
 }
 
 .navBar {
@@ -97,6 +112,13 @@ body {
 
 .productDisplay {
     background-color: chocolate;
+}
+
+input {
+    flex: 1;
+    display: block;
+    border: none;
+    min-width: 0;
 }
 
 /* media-query settings */
