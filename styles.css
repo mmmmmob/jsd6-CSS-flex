@@ -102,6 +102,11 @@ body {
     margin: 5px;
 }
 
+.productBox__description--text h3 {
+    font-weight: 200;
+    font-style: italic;
+}
+
 .productBox__description--button {
     display: flex;
     justify-content: space-evenly;
