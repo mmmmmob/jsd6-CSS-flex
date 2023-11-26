@@ -11,7 +11,6 @@
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1rem;
-    background: wheat;
 }
 
 /* flex parent settings */
@@ -23,16 +22,17 @@ body {
 
 .searchBar {
     display: flex;
-    background-color: aqua;
+    background-color: white;
     flex: 1;
     justify-content: space-between;
 }
 
 .searchBar__icon {
     width: 50px;
-    margin-right: 10px;
-    margin-left: 10px;
-    background-color: bisque;
+    background-color: white;
+    align-self: center;
+    padding: 10px;
+    border-right: 1px black solid;
 }
 
 .searchBar__box {
@@ -41,18 +41,32 @@ body {
     gap: 5px;
     justify-content: center;
     padding: 5px;
+    padding-right: 10px;
     width: 100px;
     position: relative;
-    border: solid 1px #000;
+    border-right: 1px black solid;
+}
+
+.searchBar__box h2 {
+    align-items: center;
+    padding: 5px;
+}
+
+.searchBar__box button {
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 10px;
+    font-weight: 500;
 }
 
 .navBar {
-    background-color: blue;
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 5px;
+    gap: 10px;
     padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .navBar__button {
@@ -62,7 +76,8 @@ body {
 .app__header {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;    height: 50px;
+    justify-content: space-between;    
+    border-bottom: 1px black solid;
 }
 
 .app__content {
@@ -126,7 +141,7 @@ body {
 }
 
 .productBox__description--button button {
-    padding: 5px;.
+    padding: 5px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
 }
@@ -152,8 +167,13 @@ body {
 
 /* block settings */
 .navBar__button {
-    background-color: red;
     padding: 3px;
+    padding-bottom: 0;
+    border-bottom: 1px black solid;
+}
+
+.navBar__button:hover {
+    border: 2px black dotted;
 }
 
 .productTag {
@@ -188,18 +208,17 @@ body {
 input {
     flex: 1;
     display: block;
-    border: none;
     min-width: 0;
 }
 
 footer {
-    background-color: aqua;
+    background-color: white;
 }
 
 footer p {
     padding: 5px;
     align-self: center;
-    background-color: aquamarine;
+    background-color: white;
 }
 
 /* media-query settings */
@@ -231,6 +250,7 @@ footer p {
         display: flex;
         flex-direction: column;
         height: 80px;
+        border-bottom: 1px black solid;
     }
     .navBar {
         display: flex;
@@ -238,6 +258,8 @@ footer p {
     }
     .navBar__button {
         flex: 1;
+        border-bottom: 1;
+        padding-bottom: 5px;
     }
 
     .productCenter {
@@ -247,20 +269,31 @@ footer p {
     h3 {
         text-align: center;
     }
+
+    .productSelector {
+        border-top: 1px black solid;
+    }
+        
 }
 
 @media screen and (max-width: 470px) {
     .app__header {
-        height: 185px;
+        display: flex;
+        justify-content: stretch;
+        height: 100%;
     }
 
     .productCenter {
-        margin-top: 20px;
+        /* padding-top: 30px; */
     }
     
     .navBar {
         display: flex;
         flex-direction: column;
+    }
+
+    .searchBar {
+        border-top: 1px black solid;
     }
 
     h3 {
