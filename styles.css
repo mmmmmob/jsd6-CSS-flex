@@ -76,7 +76,7 @@ body {
 .app__header {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;    
+    justify-content: space-evenly;    
     border-bottom: 1px black solid;
 }
 
@@ -278,6 +278,20 @@ footer p {
         height: 80px;
         border-bottom: 1px black solid;
     }
+
+    .productSelector {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .productSelector h2 {
+        padding-top: 10px;
+    }
+
+    .productSelector__list {
+        padding-left: 20px;
+    }
+
     .navBar {
         display: flex;
         justify-content: center;
@@ -309,8 +323,24 @@ footer p {
         height: 100%;
     }
 
-    .productCenter {
-        padding-top: 30px;
+    .productSelector {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 0;
+        padding-top: 0;
+    }
+
+    .app__content {
+        padding-top: 0%;
+    }
+
+    .productSelector__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 20px;
     }
     
     .navBar {
