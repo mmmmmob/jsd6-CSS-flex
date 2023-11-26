@@ -76,7 +76,10 @@ body {
 .app__header {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;    
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 100;    
     border-bottom: 1px black solid;
 }
 
