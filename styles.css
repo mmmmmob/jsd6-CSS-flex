@@ -1,0 +1,113 @@
+/* import default font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+
+/* clear box-model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
+    background: wheat;
+}
+
+/* flex parent settings */
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    gap: 5px;
+    padding: 5px;
+}
+
+.navBar {
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 5px;
+}
+
+.app__header {
+    height: 100px;
+    /* flex settings for nav and search bar */
+    display: flex;
+    flex-direction: column;
+}
+
+.app__content {
+    flex: 1;
+    /* settings for ads and center */
+    display: flex;
+    justify-content: space-between;
+}
+
+.productCenter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.app__footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* block settings */
+.navBar__button {
+    background-color: red;
+    padding: 3px;
+}
+
+.productTag {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: yellow;
+}
+
+.productTag__item {
+    border: rebeccapurple;
+    background-color: azure;
+}
+
+.productAds {
+    background-color: brown;
+    width: 200px
+}
+
+.productDisplay {
+    background-color: chocolate;
+}
+
+/* media-query settings */
+@media screen and (max-width: 1024px) {
+    .productAds {
+        display: none;
+    }
+
+    .productCenter {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .productTag {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
