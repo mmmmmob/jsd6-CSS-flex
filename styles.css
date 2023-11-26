@@ -59,6 +59,13 @@ body {
     gap: 10px;
 }
 
+.productSelector {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
 .app__footer {
     height: 50px;
     display: flex;
@@ -97,6 +104,11 @@ body {
 @media screen and (max-width: 1024px) {
     .productAds {
         display: none;
+    }
+
+    .app__content {
+        display: flex;
+        justify-content: center;
     }
 
     .productCenter {
