@@ -311,11 +311,25 @@ footer p {
     .navBar {
         display: flex;
         justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 10px;
     }
     .navBar__button {
         flex: 1;
         border-bottom: 1;
         padding-bottom: 5px;
+    }
+
+    .searchBar {
+        padding-top: 10px;
+        border-top: 1px black solid;
+        border-bottom: 1px black solid;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .searchBar__box {
+        border-right: 0;
     }
 
     .productCenter {
@@ -324,10 +338,6 @@ footer p {
 
     h3 {
         text-align: center;
-    }
-
-    .productSelector {
-        border-top: 1px black solid;
     }
     
     .productSelector h2 {
