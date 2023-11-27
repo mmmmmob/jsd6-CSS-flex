@@ -96,6 +96,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 10px;
+    padding-top: 10px;
 }
 
 .productSelector {
@@ -107,6 +108,8 @@ body {
 
 .productSelector h2 {
     padding-left: 20px;
+    border-right: 1px black solid;
+    padding-right: 20px;
 }
 
 .productSelector select {
@@ -277,6 +280,13 @@ footer p {
     }
 }
 
+@media screen and (max-width: 810px) {
+    .productSelector h2 {
+        border-right: 0;
+    }
+    
+}
+
 @media screen and (max-width: 768px) {
     .app__header {
         display: flex;
@@ -319,7 +329,10 @@ footer p {
     .productSelector {
         border-top: 1px black solid;
     }
-        
+    
+    .productSelector h2 {
+        border-right: 0;
+    }
 }
 
 @media screen and (max-width: 470px) {
@@ -336,8 +349,26 @@ footer p {
         padding-top: 0;
     }
 
+    .searchBar__box {
+        border-right: 0;
+    }
+
+    .productSelector h2 {
+        border-right: 0;
+    }
+
     .app__content {
         padding-top: 0%;
+    }
+
+    .productTag {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .productSelector {
+        margin-top: -15px;
+        margin-right: 10px;
     }
 
     .productSelector__list {
@@ -352,10 +383,17 @@ footer p {
     .navBar {
         display: flex;
         flex-direction: column;
+        height: 180px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
     }
 
     .searchBar {
         border-top: 1px black solid;
+        height: 60px;
+        border-bottom: 10px;
+        margin-top: -10px;
     }
 
     h3 {
