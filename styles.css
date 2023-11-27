@@ -257,6 +257,7 @@ footer p {
 }
 
 /* media-query settings */
+
 @media screen and (max-width: 1024px) {
     .productAds {
         display: none;
@@ -393,9 +394,9 @@ footer p {
     .navBar {
         display: flex;
         flex-direction: column;
-        height: 180px;
-        margin-top: 10px;
+        height: 200px;
         margin-bottom: 10px;
+        padding-top: 20px;
         padding-bottom: 20px;
     }
 
